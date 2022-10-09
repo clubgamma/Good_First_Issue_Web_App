@@ -42,7 +42,10 @@ const About = () => {
                 <span className="repo-icons">
                   <GoRepo />
                 </span>
-                Good_First_Issue_Web_App
+
+                <a href="https://github.com/clubgamma/Good_First_Issue_Web_App" target={"_blank"}>
+                  Good_First_Issue_Web_App
+                </a>
               </h2>
             </div>
             <div className="repo-description">
@@ -71,7 +74,6 @@ const About = () => {
                     </span>
                     <span className="nameofcontributor">syprogrammer</span>
                   </div>
-              
                 </div>
               </div>
             </div>

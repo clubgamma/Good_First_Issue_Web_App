@@ -50,6 +50,10 @@
   justify-content: center;
   color: rgba(0, 132, 255, 0.808);
 }
+.repo-name a{
+  text-decoration: none;
+  color: rgba(0, 132, 255, 0.808);
+}
 .repo-icons{
   padding: 5px;
 }

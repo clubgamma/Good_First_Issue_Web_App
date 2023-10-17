@@ -1,5 +1,7 @@
-import React from 'react'
-import logo from './logo.png'
+import React from "react";
+import logo from "../assets/logo.png";
+import "./About.css";
+
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { GoRepo, GoPerson } from "react-icons/go";
 import { HiUserGroup } from "react-icons/hi";
@@ -43,7 +45,10 @@ const About = () => {
                   <GoRepo />
                 </span>
 
-                <a href="https://github.com/clubgamma/Good_First_Issue_Web_App" target={"_blank"}>
+                <a
+                  href="https://github.com/clubgamma/Good_First_Issue_Web_App"
+                  target={"_blank"}
+                >
                   Good_First_Issue_Web_App
                 </a>
               </h2>
@@ -84,6 +89,6 @@ const About = () => {
       </div>
     </>
   );
-}
+};
 
-export default About
+export default About;

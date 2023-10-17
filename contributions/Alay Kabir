@@ -1,0 +1,11 @@
+Hey Fellow Contributers and creators of this repository!
+First I want to thank you and I declare that,
+
+- I have read the Code Of Conduct.
+- I have followed all the steps of submission properly.
+
+The contribution that I did in this project are as follows:
+
+1. I made a proper File Structer and added folder for Pages in the frontend folder.
+2. I provided with the routes in App.js page for better navigation
+3. I created Form pages including it css stylesheet and routed it to the /form

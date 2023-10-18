@@ -9,6 +9,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 /*
   2. Remove default margin
 */
@@ -29,10 +32,10 @@ body {
   4. Add accessible line-height
   5. Improve text rendering
 */
-body {
+/* body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
 /*
   6. Improve media defaults
@@ -84,15 +87,13 @@ body {
 
 .intro {
   min-height: 100vh;
-
+  background: url('../assets/stackedbgrd.png');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  /* background-image: url(images/bg-intro-mobile.png); */
-  background-color: black;
-  /* border: 2px solid purple; */
+  
   padding: 4.5rem 0;
 }
 
@@ -104,7 +105,7 @@ body {
   max-width: 1300px;
 
   text-align: center;
-  /* border: 2px solid black; */
+  
   margin: 1.5rem;
 }
 
@@ -113,13 +114,23 @@ body {
 
   color: white;
   margin-bottom: 2.5rem;
-  /* border: 2px solid yellow; */
+  
   font-weight: 400;
   max-width: 500px;
 }
 
 .left-col h1 {
   margin-bottom: 1rem;
+}
+
+.github_link{
+  display: block;
+  font-size: 1.2rem;
+  
+  font-weight: 500;
+}
+.github_link a{
+  text-decoration:none;
 }
 
 /* .left-col p {} */
@@ -156,10 +167,14 @@ body {
 .input-group {
   position: relative;
   margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-group label {
-  display: none;
+  /* display: none; */
+  text-align: left;
+  font-weight: 500;
 }
 
 .input-group input {

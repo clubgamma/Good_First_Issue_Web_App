@@ -9,7 +9,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-multi-select-component": "^4.3.4",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

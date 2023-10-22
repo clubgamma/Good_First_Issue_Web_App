@@ -1,127 +1,141 @@
-.header {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  background-color: rgb(243, 235, 235);
+  width: 99vw;
+  background:radial-gradient(rgb(54, 135, 141),rgb(79, 110, 167));
   padding: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.logo-img {
-  margin-left: 70px;
-}
-.About-logo {
-  width: 5rem;
-}
-.heading {
-  color: red;
-}
-.social-links ul {
+
+/* Add these styles for the improved navbar */
+.navbar {
+  background:linear-gradient(to left,rgb(74, 74, 155),rgb(74, 140, 167));
   display: flex;
-  justify-content: center;
-  margin-right: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
-.social-links ul li {
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li{
   list-style: none;
-  padding: 5px;
-}
-.social-links ul li a {
-  color: black;
 }
 
-/* repositories css styling done from here */
-.center {
-  text-align: center;
-  font-size: 2rem;
-}
-.repositories {
+.navbar .logo-img {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10;
-  margin: 10px;
+  margin-right: 20px;
 }
-.repo-container {
-  background-color: rgba(220, 230, 245, 0.301);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  opacity: 0.9;
-  width: 25rem;
-  height: 16rem;
+
+.navbar .logo-img img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+
 }
-.repo-name {
-  opacity: 1;
+
+.navbar h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  align-self:center;
+  margin: 0;
+}
+
+.navbar  {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  color: rgba(0, 132, 255, 0.808);
-}
-.repo-name a {
-  text-decoration: none;
-  color: rgba(0, 132, 255, 0.808);
-}
-.repo-icons {
-  padding: 5px;
-}
-
-.repo-description p {
-  margin: 0px 5px 5px 2px;
-  padding: 10px;
-  line-height: 1px;
-  font-size: 0.9rem;
-  font-family: sans-serif;
-  font-weight: 500px;
-}
-
-.contributor-names {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 5px;
-}
-.contributor-names .nameofcontributor {
-  color: rgb(7, 182, 252);
-  font-size: larger;
-  font-weight: 600;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.navbar  a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add these styles to enhance the hover effect */
+.navbar  a:hover {
+  color: #1f4a99;
+}
+
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.social-links {
+  padding: 10px;
+}
+
+.social-links  a {
+  color: black;
+  margin: 0px  6px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+.what-is-gfi{
+  padding-top:3rem;
+}
+.what-is-gfi,
+.motivation,
+.how-to-contribute {
+  
+  margin: 20px;
+  text-align: center;
+}
+
+.what-is-gfi h2,
+.motivation h2,
+.how-to-contribute h2 {
+  font-size: 2rem;
+  color: #3c30a8f3;
+}
+
+.what-is-gfi p,
+.motivation p,
+.how-to-contribute p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer {
+  background: linear-gradient(to left, rgb(74, 74, 155), rgb(74, 140, 167));
+  padding: 20px;
+  text-align: center;
+  /* position: fixed;
+   */
+  position: relative;
+  width: 99vw;
+  color: #fff;
+  /* margin-top: 20px; */
+  margin-bottom: -20px;
+  bottom: 0;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer a:hover {
+  color: #ff9900;
 }

@@ -5,89 +5,71 @@ import "./About.css";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { GoRepo, GoPerson } from "react-icons/go";
 import { HiUserGroup } from "react-icons/hi";
+
 const About = () => {
   return (
-    <>
-      <div className="main">
-        {/* header */}
-        <div className="header">
-          <div className="heading">
-            <div className="logo-img">
-              <img src={logo} className="About-logo" alt="logo" />
-            </div>
-            <h1>Club Gamma</h1>
-          </div>
-          <div className="header-content">
-            <span>Empowering Student Tech Community</span>
-          </div>
-          <div className="social-links">
-            <ul>
-              <li>
-                <a href="https://github.com/clubgamma">
-                  <FaGithub />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/club_gamma">
-                  <FaTwitter />
-                </a>
-              </li>
-            </ul>
+    <div className="main">
+      <header className="header navbar">
+        <div className="logo-img">
+          <img src={logo} alt="Club Gamma Logo" className="About-logo" />
+          <div>
+          <h1>Club Gamma</h1>
+          <p>Empowering Student Tech Community</p>
           </div>
         </div>
-        <h2 className="center">My Repositories</h2>
-        <div className="repositories">
-          {/* repo container starts here  */}
-          <div className="repo-container">
-            <div className="repo-name">
-              <h2>
-                <span className="repo-icons">
-                  <GoRepo />
-                </span>
-
-                <a
-                  href="https://github.com/clubgamma/Good_First_Issue_Web_App"
-                  target={"_blank"}
-                >
-                  Good_First_Issue_Web_App
-                </a>
-              </h2>
-            </div>
-            <div className="repo-description">
-              <p>A simple react-native expo app to never forget anything. </p>
-            </div>
-            <div className="repo-contributors">
-              <h4>
-                <span className="repo-icons">
-                  <HiUserGroup />
-                </span>
-                Contributors
-              </h4>
-              <div className="contributor-container">
-                <div className="contributor-icon"></div>
-                <div className="contributor-names">
-                  <div className="c-namecontainer">
-                    <span className="repo-icons">
-                      <GoPerson />
-                    </span>
-                    <span className="nameofcontributor">Nishu0</span>
-                  </div>
-
-                  <div className="c-namecontainer">
-                    <span className="repo-icons">
-                      <GoPerson />
-                    </span>
-                    <span className="nameofcontributor">syprogrammer</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* repo container ends here  */}
+        <div className="social-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/form">Add Repo</a></li>
+          </ul>
+          <a href="https://github.com/clubgamma">
+            <FaGithub />
+          </a>
+          <a href="https://twitter.com/club_gamma">
+            <FaTwitter />
+          </a>
         </div>
-      </div>
-    </>
+      </header>
+      <section className="what-is-gfi">
+        <h2>What is GFI?</h2>
+        <p>
+          GitHub advises the usage of "good first issue" (GFI) labels to identify
+          issues that are feasible for newcomers to handle in order to speed up
+          beginner onboarding. However, prior research demonstrates the scarcity
+          and inappropriateness of manually classified GFIs, demonstrating the
+          need for automated suggestions. In this project, we propose
+          GFI-Web-app, a proof-of-concept for automatic GFI recommendation in
+          reality. Project administrators can set up GFI-app to find and tag
+          potential GFIs so that beginners can quickly find issues to fix when
+          submitting their first contributions.
+        </p>
+      </section>
+      <section className="motivation">
+        <h2>Motivation for the Project</h2>
+        <p>
+          This website is primarily intended for developers who wish to
+          contribute to open source software but are unsure of where or how to
+          begin. This website gives developers filters so they may search and
+          choose issues and repositories based on the programming languages they
+          are most familiar with. Additionally, they have a choice in the issues
+          they choose to address.
+        </p>
+      </section>
+      <section className="how-to-contribute">
+        <h2>How to Contribute</h2>
+        <ol>
+          <li>Visit our GitHub repository: <a href="https://github.com/clubgamma/Good_First_Issue_Web_App">Good_First_Issue_Web_App</a></li>
+          <li>Explore open issues and select a good first issue.</li>
+          <li>Fork the repository and create a branch for your work.</li>
+          <li>Make the necessary changes and commit them.</li>
+          <li>Create a pull request to propose your changes.</li>
+          <li>Participate in discussions and complete the assigned tasks.</li>
+        </ol>
+      </section>
+      <footer className="footer">
+        <p>Find us on GitHub: <a href="https://github.com/clubgamma/Good_First_Issue_Web_App">clubgamma/Good_First_Issue_Web_App</a></p>
+      </footer>
+    </div>
   );
 };
 

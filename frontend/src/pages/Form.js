@@ -50,6 +50,7 @@ function Form() {
             <p>
               Just add the Issues, and let the Open source contributers show
               their magic with the respetive Tech-Stack.
+              <span className="github_link"><a href="https://github.com/clubgamma/Good_First_Issue_Web_App">Github link</a> </span>
             </p>
           </div>
           <div class="rigth-col">
@@ -61,7 +62,7 @@ function Form() {
             <div class="form-container">
               <form action="#" autocomplete="off">
                 <div class="input-group">
-                  <label for="repoName">Repo Name</label>
+                  <label htmlFor="repoName">Repo Name</label>
                   <input
                     type="text"
                     id="repoName"
@@ -76,7 +77,7 @@ function Form() {
                   <p class="error-text no-error">Repo Name cannot be empty</p>
                 </div>
                 <div class="input-group">
-                  <label for="repoLink">Repo Link</label>
+                  <label htmlFor="repoLink">Repo Link</label>
                   <input
                     type="text"
                     id="repoLink"

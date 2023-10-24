@@ -1,0 +1,16 @@
+.footer-bg {
+  background: #22272e;
+  padding: 15px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+.repo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #acb9c6;
+}

@@ -11,7 +11,7 @@ import { HiUserGroup } from "react-icons/hi";
 const About = () => {
   return (
     <div className="main">
-      <header className="header navbar">
+      {/* <header className="header navbar">
         <div className="logo-img">
           <img src={logo} alt="Club Gamma Logo" className="About-logo" />
           <div>
@@ -31,7 +31,7 @@ const About = () => {
             <FaTwitter />
           </a>
         </div>
-      </header>
+      </header> */}
       <section className="what-is-gfi">
         <h2>What is GFI?</h2>
         <p>
@@ -68,9 +68,9 @@ const About = () => {
           <li>Participate in discussions and complete the assigned tasks.</li>
         </ol>
       </section>
-      <footer className="footer">
+      {/* <footer className="footer">
         <p>Find us on GitHub: <a href="https://github.com/clubgamma/Good_First_Issue_Web_App">clubgamma/Good_First_Issue_Web_App</a></p>
-      </footer>
+      </footer> */}
 
 
     </div>
@@ -78,3 +78,9 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
+
+

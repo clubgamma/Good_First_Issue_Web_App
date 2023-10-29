@@ -35,11 +35,56 @@ const options = [
 
 function Form() {
   const [selected, setSelected] = useState();
-
+  const [repoName, setRepoName] = useState("");
+  const [repoLink, setRepoLink] = useState("");
+  const [description, setDescription] = useState("");
   //Fuction handling the tech-stack options
   function handleSelect(data) {
     setSelected(data);
   }
+
+    // Function to handle form submission
+    function handleSubmit(e) {
+      e.preventDefault();
+      // Basic client-side validation
+
+      let authenticated=true;
+      // Check if the repoName is empty
+      if (!repoName) {
+        alert("Repo Name cannot be empty");
+        authenticated=false;
+      }
+
+      // Check if the repoLink is empty
+      if (!repoLink) {
+        alert("Repo Link cannot be empty");
+        authenticated=false;
+      }
+      const githubRepoPattern = /^https:\/\/github.com\/\w+\/\w+$/;
+      if (!githubRepoPattern.test(repoLink)) {
+      alert("Please enter a valid GitHub repository link (e.g., 'https://github.com/username/repo').");
+      authenticated=false;
+      }
+      // Check if description is empty
+      if (!description) {
+        alert("Description cannot be empty");
+        authenticated=false;
+      }
+
+      // Check if a tech stack is selected
+      if (!selected || selected.length === 0) {
+        alert("Tech Stack cannot be empty");
+        authenticated=false;
+      }
+      
+      // If the user is authenticated, you can proceed with the form submission
+      if(authenticated){
+        return;
+      }
+      // Add your form submission logic here
+    }
+
+    
   return (
     <>
       {/* HTML for Form */}
@@ -61,36 +106,30 @@ function Form() {
             </div>
             <div class="form-container">
               <form action="#" autocomplete="off">
-                <div class="input-group">
-                  <label htmlFor="repoName">Repo Name</label>
-                  <input
-                    type="text"
-                    id="repoName"
-                    placeholder="Repo Name"
-                    required
-                  />
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">Repo Name cannot be empty</p>
-                </div>
-                <div class="input-group">
-                  <label htmlFor="repoLink">Repo Link</label>
-                  <input
-                    type="text"
-                    id="repoLink"
-                    placeholder="Repo Link"
-                    required
-                  />
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">Repo Link cannot be empty</p>
-                </div>
+              <div className="input-group">
+              <label htmlFor="repoName">Repo Name</label>
+              <input
+                type="text"
+                id="repoName"
+                placeholder="Repo Name"
+                required
+                value={repoName}
+                onChange={(e) => setRepoName(e.target.value)}
+              />
+            </div>
+            <div className="input-group">
+              <label htmlFor="repoLink">Repo Link</label>
+              <input
+                type="text"
+                id="repoLink"
+                placeholder="Repo Link"
+                required
+                value={repoLink}
+                onChange={(e) => setRepoLink(e.target.value)}
+              />
+            </div>
+            
+
                 <div class="input-group">
                   <label for="description">description</label>
                   <textarea
@@ -98,6 +137,7 @@ function Form() {
                     rows="5"
                     cols="60"
                     placeholder="Add small description for the Good first Issue"
+                    onChange={(e) => setDescription(e.target.value)}
                   ></textarea>
                   {/* <img
                     src="images/icon-error.svg"
@@ -133,7 +173,7 @@ function Form() {
                   <p class="error-text no-error">Tech Stack cannot be empty</p>
                 </div>
 
-                <button type="submit" class="">
+                <button  onClick={()=>handleSubmit()}>
                   Submit
                 </button>
                 <p class="form-footer">

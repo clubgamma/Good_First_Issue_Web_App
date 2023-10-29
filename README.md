@@ -53,5 +53,6 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 | **All-About-Food**      | https://github.com/clubgamma/All-About-Food |
 
 ---
+[Contribution from Sean W](./contributions/Sean_W.md)
 
 **[⬆ back to top](#contents)**

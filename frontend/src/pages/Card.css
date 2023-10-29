@@ -1,0 +1,28 @@
+.card-bg {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card-bg .card {
+  background: lightgrey;
+  padding: 15px;
+  border: 1px solid lightslategray;
+  border-radius: 12px;
+}
+
+.card-bg .repo-title {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-bg .repo-contr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}

@@ -1,6 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.png";
 import "./About.css";
+import {logo} from './index'
+
+
 
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { GoRepo, GoPerson } from "react-icons/go";
@@ -69,6 +71,8 @@ const About = () => {
       <footer className="footer">
         <p>Find us on GitHub: <a href="https://github.com/clubgamma/Good_First_Issue_Web_App">clubgamma/Good_First_Issue_Web_App</a></p>
       </footer>
+
+
     </div>
   );
 };

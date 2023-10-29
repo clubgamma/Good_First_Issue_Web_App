@@ -1,3 +1,4 @@
+
 .main {
   display: flex;
   flex-direction: column;
@@ -138,4 +139,47 @@
 
 .footer a:hover {
   color: #ff9900;
+}
+
+.about-container {
+  padding: 2rem 12rem;
+  background: #f3ebeb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.about-container .About-logo {
+  margin: auto;
+  border-radius: 100%;
+  margin-bottom: 1.5rem;
+  width: 10rem;
+}
+
+.about-container h2 {
+  color: #601f2a;
+}
+
+.about-container p {
+  color: #474747;
+}
+
+.about-container hr {
+  border: 10px dotted #acb9c6;
+  border-top: none;
+  width: 10%;
+}
+
+@media only screen and (width < 768px) {
+  .about-container {
+    padding: 2rem 4rem;
+  }
+  
+  .about-container hr {
+    border-width: 5px;
+  }
 }

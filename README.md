@@ -25,6 +25,7 @@ This website is primarily intended for developers who wish to contribute to open
 ## Contribution Guidelines
 
 _Welcome hackers! It is really awesome to have you here! Before start contributing to this project, make sure you read our [Code Of Conduct](https://github.com/clubgamma/Good_First_Issue_Web_App/blob/main/CODE_OF_CONDUCT.md). It is crucial to make this inclusive and open to everyone; otherwise, it would not be awesome to have you here._
+- [Ayush Dhiman](contributions/ayushdhiman-py.txt)
 
 ## Submitting a pull request
 

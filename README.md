@@ -9,7 +9,7 @@
 
 
 ## Description
-GitHub advises the usage of "good first issue" (GFI) labels to identify issues that are feasible for newcomers to handle in order to speed up beginner onboarding. However, prior research demonstrates the scarcity and inappropriateness of manually classified GFIs, demonstrating the need for automated suggestions. In this project, we propose GFI-Web-app, a proof-of-concept for automatic GFI recommendation in reality (available at https://pending.com). Project administrators can set up GFI-app to find and tag potential GFIs so that beginners can quickly find issues to fix when submitting their first contributions. 
+GitHub advises the usage of "good first issue" (GFI) labels to identify issues that are feasible for newcomers to handle in order to speed up beginner onboarding. However, prior research demonstrates the scarcity and inappropriateness of manually classified GFIs, demonstrating the need for automated suggestions. In this project, we propose GFI-Web-app, a proof-of-concept for automatic GFI recommendation in reality available at [GitHub Docs](https://docs.github.com). Project administrators can set up GFI-app to find and tag potential GFIs so that beginners can quickly find issues to fix when submitting their first contributions. 
 
 
 ## An Overview of the GFI-Web App Architecture

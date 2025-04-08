@@ -50,7 +50,11 @@ function Form() {
             <p>
               Just add the Issues, and let the Open source contributers show
               their magic with the respetive Tech-Stack.
-              <span className="github_link"><a href="https://github.com/clubgamma/Good_First_Issue_Web_App">Github link</a> </span>
+              <span className="github_link">
+                <a href="https://github.com/clubgamma/Good_First_Issue_Web_App">
+                  Github link
+                </a>{" "}
+              </span>
             </p>
           </div>
           <div class="rigth-col">

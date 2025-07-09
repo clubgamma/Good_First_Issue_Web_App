@@ -25,8 +25,27 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Club Gamma (GFI)</title>
+    <style>
+      body.dark-mode{
+        background-color:#121212;
+        color:#f1f1f1;
+      }
+      button#darkModeToggle{
+        position:fixed;
+        top:1rem;
+        right:1rem;
+        padding:10px 15px;
+        background-color:#333;
+        colo:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+        z-index:1000;
+      }
+    </style>
   </head>
   <body>
+    <button id=""darkModeToggle">Toggle Dark Mode</button>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +58,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <script>
+        const toggleBtn=document.getElementById('darkModeToggle');
+        toggleBtn.addEventListener('click',()=>{
+          document.body.classList.toggle('dark-mode');
+        });
+        </script>
   </body>
 </html>

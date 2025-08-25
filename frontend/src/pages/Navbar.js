@@ -27,6 +27,8 @@ function Navbar() {
             <NavLink to='/form'>Form</NavLink>
           </li>
         </ul>
+        <a href="/incident-response">Incident Response Plan</a>
+
       </div>
       <div className="social-links">
         <ul>

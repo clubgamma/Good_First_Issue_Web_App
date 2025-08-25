@@ -1,6 +1,10 @@
 import "./App.css";
 import {Hero, About, Repositories, Form, Layout} from './pages'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import IncidentResponse from "./pages/IncidentResponse";
+
+// inside <Routes> or equivalent
+<Route path="/incident-response" element={<IncidentResponse />} />
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -1,16 +1,85 @@
+/* Keep your existing styles for .repo-bg and Card component */
+
 .repo-bg {
-  min-height: 100vh;
-  background: #f3ebeb;
-  text-align: center;
-  padding: 2rem 12rem;
+    padding: 40px 5%;
+    background-color: #f4f7f6;
+    min-height: 100vh;
 }
 
 .repo-bg h2 {
-  margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
 }
 
-@media only screen and (width < 900px) {
-  .repo-bg {
-    padding: 2rem 2rem;
-  }
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* --- New Styles for the GFI Section --- */
+
+.my-repos-section {
+    margin-bottom: 80px;
+}
+
+.gfi-section p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.loading-message, .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 40px;
+    color: #333;
+}
+
+.error-message {
+    color: #e74c3c;
+    background-color: #fbecec;
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+/* --- Styles for Language Filter Buttons --- */
+.language-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.language-filter button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-filter button:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-filter button.active {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 700;
 }

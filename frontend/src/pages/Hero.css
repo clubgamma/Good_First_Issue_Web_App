@@ -1,12 +1,96 @@
 .hero-bg {
-  min-height: 100vh;
-  background: #f3ebeb;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 90vh;
 }
 
-@media only screen and (width < 425px) {
-  .hero-bg img {
-    width: 8rem;
-  }
+.hero-content {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.hero-logo {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.hero-headline {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.hero-subheadline {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(41, 128, 185, 0.5);
+}
+
+/* --- Styles for the new feature cards --- */
+.feature-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.feature-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-color: #3498db;
+}
+
+.card-icon {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.5;
 }

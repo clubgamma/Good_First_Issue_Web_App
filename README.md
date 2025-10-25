@@ -32,6 +32,10 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 3. Add a file with your name in the contributions folder telling about your contributions and also link that file in the readme
 5. Push to your fork and [submit a pull request](https://github.com/clubgamma/Good_First_Issue_Web_App/compare)
 6. Pat your self on the back and wait for your pull request to be reviewed and merged.
+   
+## Contributions
+
+- [Shristi Sharma](contributions/shristi_sharma.md)
 
 ### Resources
 
@@ -44,13 +48,13 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 **Hacktoberfest repository :** 
 
 
-| **Repositories**       | **URL**           |
-| --- |--- |
-| **Uneasy**      | https://github.com/clubgamma/uneasy |
-| **Give-my-resume**      | https://github.com/clubgamma/give-my-resume |
-| **Trendit**     | https://github.com/clubgamma/Trendit |
-| **Directlywa**     | https://github.com/clubgamma/directlywa |
-| **All-About-Food**      | https://github.com/clubgamma/All-About-Food |
+| **Repositories**   | **URL**                                     |
+| ------------------ | ------------------------------------------- |
+| **Uneasy**         | https://github.com/clubgamma/uneasy         |
+| **Give-my-resume** | https://github.com/clubgamma/give-my-resume |
+| **Trendit**        | https://github.com/clubgamma/Trendit        |
+| **Directlywa**     | https://github.com/clubgamma/directlywa     |
+| **All-About-Food** | https://github.com/clubgamma/All-About-Food |
 
 ---
 

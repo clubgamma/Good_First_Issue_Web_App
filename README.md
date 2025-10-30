@@ -25,6 +25,8 @@ This website is primarily intended for developers who wish to contribute to open
 
 _Welcome hackers it is really **awesome** have you here! Before start contributing with this project make sure you read our [Code Of Conduct](https://github.com/clubgamma/Good_First_Issue_Web_App/blob/main/CODE_OF_CONDUCT.md), it is really important to make this inclusive and open to everyone, otherwise, it would not be awesome to have you here_
 
+[Dion Ahmetaj](contributions/dion-ahmetaj.md)
+
 ## Submitting a pull request
 
 1. [Fork](https://github.com/clubgamma/Good_First_Issue_Web_App/fork) and clone the repository

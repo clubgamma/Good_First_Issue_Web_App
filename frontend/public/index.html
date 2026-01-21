@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
+     <!-- Add accessibility meta tag -->
+    <meta name="color-scheme" content="light dark" />
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  name="description"
+  content="Find good first issues to contribute to open source projects. Filter by programming language and discover beginner-friendly issues to start your open source journey."
+/>
+<meta name="keywords" content="good first issue, open source, GitHub, beginner, contribute, programming" />
+<meta name="author" content="Club Gamma" />
+
+<!-- Open Graph tags for social media sharing -->
+<meta property="og:title" content="Good First Issue - Club Gamma" />
+<meta property="og:description" content="Discover beginner-friendly open source issues" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://good-first-issue-web-app.vercel.app/" />
+<meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Good First Issue - Club Gamma" />
+<meta name="twitter:description" content="Discover beginner-friendly open source issues" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +39,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Club Gamma (GFI)</title>
+    <!-- More descriptive than just "Club Gamma (GFI)" -->
+    <title>Good First Issue Finder | Club Gamma - Start Your Open Source Journey</title>
+
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+ <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://api.github.com" />
+    <link rel="dns-prefetch" href="https://api.github.com" />
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

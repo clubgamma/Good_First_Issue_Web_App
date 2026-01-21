@@ -1,16 +1,26 @@
-import React from 'react'
-import './Footer.css'
-import { GoRepo, GoPerson } from "react-icons/go";
+import React from "react";
+import "./Footer.css";
+import { GoRepo } from "react-icons/go";
 
 function Footer() {
   return (
-    <div className='footer-bg'>
-      <a className='repo-link' href="https://github.com/clubgamma/Good_First_Issue_Web_App" target={"_blank"}>
+    <footer className="footer-bg">
+      <a
+        className="repo-link"
+        href="https://github.com/clubgamma/Good_First_Issue_Web_App"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Go to GitHub repository"
+      >
         <GoRepo />
         <p>Go to repository</p>
       </a>
-    </div>
-  )
+
+      <p className="footer-text">
+        © {new Date().getFullYear()} Club Gamma · Made for Open Source Beginners 💙
+      </p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

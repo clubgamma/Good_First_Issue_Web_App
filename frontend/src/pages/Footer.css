@@ -1,16 +1,32 @@
 .footer-bg {
   background: #22272e;
   padding: 15px;
-  position: static;
-  bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
 .repo-link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   text-decoration: none;
   color: #acb9c6;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.repo-link:hover,
+.repo-link:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.footer-text {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #8b949e;
 }

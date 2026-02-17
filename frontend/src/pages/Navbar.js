@@ -1,4 +1,3 @@
-
 import { Moon, Sun } from "lucide-react";
 import "./Navbar.css";
 import { logo } from "./index";
@@ -8,7 +7,6 @@ import { useEffect, useState } from "react";
 import { Button } from "../components/ui/button";
 
 function Navbar() {
-
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -21,7 +19,6 @@ function Navbar() {
     }
   }, [theme]);
 
-
   return (
     <div className="navbar-bg dark:bg-zinc-900">
       <div className="navbar-title">
@@ -31,10 +28,18 @@ function Navbar() {
 
       <div className="navbar-tabs">
         <ul>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/repositories">Repositories</NavLink></li>
-          <li><NavLink to="/form">Form</NavLink></li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/repositories">Repositories</NavLink>
+          </li>
+          <li>
+            <NavLink to="/form">Form</NavLink>
+          </li>
         </ul>
       </div>
 
@@ -53,7 +58,6 @@ function Navbar() {
               <p>Twitter</p>
             </Link>
           </li>
-
         </ul>
       </div>
       <div className="dark-mode-wrapper flex items-center justify-center">
@@ -103,7 +107,6 @@ function Navbar() {
             <Sun className="h-5 w-5 text-yellow-500 transition-colors duration-300" />
           </Button>
         )}
-
       </div>
     </div>
   );

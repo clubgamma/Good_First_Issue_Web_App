@@ -1,6 +1,6 @@
-import React from 'react'
-import './Hero.css'
-import { lightModeLogoWithName } from './index'
+import React from "react";
+import "./Hero.css";
+import { lightModeLogoWithName } from "./index";
 
 function Hero() {
   return (
@@ -16,5 +16,4 @@ function Hero() {
   );
 }
 
-
-export default Hero
+export default Hero;

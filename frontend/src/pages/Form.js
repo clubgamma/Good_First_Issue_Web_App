@@ -45,7 +45,6 @@ function Form() {
     <div className="form-bg dark:bg-zinc-900 transition-colors duration-300">
       <section className="intro dark:bg-none">
         <div className="container">
-
           {/* LEFT COLUMN */}
           <div className="left-col dark:text-gray-200">
             <h1 className="dark:text-white">Welcome Organisations!</h1>
@@ -65,7 +64,6 @@ function Form() {
 
           {/* RIGHT COLUMN */}
           <div className="right-col">
-
             {/* TOP BOX */}
             <div className="top-box dark:bg-purple-700 dark:shadow-[0_5px_#000]">
               <p className="dark:text-gray-100">
@@ -76,7 +74,6 @@ function Form() {
             {/* FORM CONTAINER */}
             <div className="form-container dark:bg-zinc-800 dark:shadow-[0_7px_#000]">
               <form autoComplete="off">
-
                 {/* INPUT GROUP */}
                 <div className="input-group">
                   <label className="dark:text-gray-300">Repo Name</label>
@@ -130,20 +127,15 @@ function Form() {
 
                 <p className="form-footer dark:text-gray-400">
                   By clicking the button, you are agreeing to our{" "}
-                  <span className="dark:text-red-400">
-                    Terms and Services
-                  </span>
+                  <span className="dark:text-red-400">Terms and Services</span>
                 </p>
-
               </form>
             </div>
           </div>
-
         </div>
       </section>
     </div>
   );
-
 }
 
 export default Form;

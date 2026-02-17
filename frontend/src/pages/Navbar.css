@@ -6,13 +6,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar-tabs{
+.navbar-tabs {
   margin-left: 22%;
 }
-.social-links{
+.social-links {
   margin-left: 14%;
 }
-
 
 .navbar-bg .navbar-title {
   display: flex;

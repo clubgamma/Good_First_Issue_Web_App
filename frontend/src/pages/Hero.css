@@ -4,9 +4,3 @@
   display: grid;
   place-items: center;
 }
-
-@media only screen and (width < 425px) {
-  .hero-bg img {
-    width: 8rem;
-  }
-}

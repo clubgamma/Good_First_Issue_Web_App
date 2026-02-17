@@ -40,112 +40,101 @@ function Form() {
   function handleSelect(data) {
     setSelected(data);
   }
+
   return (
-    <>
-      {/* HTML for Form */}
-      <section class="intro">
-        <div class="container">
-          <div class="left-col">
-            <h1>Welcome Organisations!</h1>
-            <p>
+    <div className="form-bg dark:bg-zinc-900 transition-colors duration-300">
+      <section className="intro dark:bg-none">
+        <div className="container">
+          {/* LEFT COLUMN */}
+          <div className="left-col dark:text-gray-200">
+            <h1 className="dark:text-white">Welcome Organisations!</h1>
+            <p className="dark:text-gray-300">
               Just add the Issues, and let the Open source contributers show
               their magic with the respetive Tech-Stack.
-              <span className="github_link"><a href="https://github.com/clubgamma/Good_First_Issue_Web_App">Github link</a> </span>
+              <span className="github_link">
+                <a
+                  href="https://github.com/clubgamma/Good_First_Issue_Web_App"
+                  className="dark:text-cyan-400"
+                >
+                  Github link
+                </a>
+              </span>
             </p>
           </div>
-          <div class="rigth-col">
-            <div class="top-box">
-              <p>
+
+          {/* RIGHT COLUMN */}
+          <div className="right-col">
+            {/* TOP BOX */}
+            <div className="top-box dark:bg-purple-700 dark:shadow-[0_5px_#000]">
+              <p className="dark:text-gray-100">
                 <span>CLUB GAMMA </span> invites you all
               </p>
             </div>
-            <div class="form-container">
-              <form action="#" autocomplete="off">
-                <div class="input-group">
-                  <label htmlFor="repoName">Repo Name</label>
+
+            {/* FORM CONTAINER */}
+            <div className="form-container dark:bg-zinc-800 dark:shadow-[0_7px_#000]">
+              <form autoComplete="off">
+                {/* INPUT GROUP */}
+                <div className="input-group">
+                  <label className="dark:text-gray-300">Repo Name</label>
                   <input
                     type="text"
-                    id="repoName"
                     placeholder="Repo Name"
                     required
+                    className="dark:bg-zinc-700 dark:text-white dark:border-zinc-600"
                   />
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">Repo Name cannot be empty</p>
                 </div>
-                <div class="input-group">
-                  <label htmlFor="repoLink">Repo Link</label>
+
+                <div className="input-group">
+                  <label className="dark:text-gray-300">Repo Link</label>
                   <input
                     type="text"
-                    id="repoLink"
                     placeholder="Repo Link"
                     required
+                    className="dark:bg-zinc-700 dark:text-white dark:border-zinc-600"
                   />
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">Repo Link cannot be empty</p>
                 </div>
-                <div class="input-group">
-                  <label for="description">description</label>
-                  <textarea
-                    name="description"
-                    rows="5"
-                    cols="60"
-                    placeholder="Add small description for the Good first Issue"
-                  ></textarea>
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">
-                    Looks like this is not an description
-                  </p>
-                </div>
-                <div class="input-group">
-                  <label for="techStack">techStack</label>
 
-                  {/* <input
-                    type="text"
-                    id="tesxStack"
-                    placeholder="Tech-Stack"
-                    required
-                  /> */}
+                <div className="input-group">
+                  <label className="dark:text-gray-300">Description</label>
+                  <textarea
+                    rows="5"
+                    placeholder="Add small description for the Good first Issue"
+                    className="dark:bg-zinc-700 dark:text-white dark:border-zinc-600"
+                  />
+                </div>
+
+                <div className="input-group">
+                  <label className="dark:text-gray-300">Tech Stack</label>
                   <Select
                     options={options}
                     value={selected}
                     onChange={handleSelect}
-                    isSearchable={true}
+                    isSearchable
                     isMulti
                     placeholder="Select Tech-Stack"
+                    className="dark:text-black"
                   />
-                  {/* <img
-                    src="images/icon-error.svg"
-                    class="error-icon no-error"
-                    alt=""
-                  /> */}
-                  <p class="error-text no-error">Tech Stack cannot be empty</p>
                 </div>
 
-                <button type="submit" class="">
+                {/* BUTTON */}
+                <button
+                  type="submit"
+                  className="dark:bg-emerald-600 dark:shadow-[0_5px_#064e3b] dark:hover:bg-emerald-500"
+                >
                   Submit
                 </button>
-                <p class="form-footer">
+
+                <p className="form-footer dark:text-gray-400">
                   By clicking the button, you are agreeing to our{" "}
-                  <span>Terms and Services</span>
+                  <span className="dark:text-red-400">Terms and Services</span>
                 </p>
               </form>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

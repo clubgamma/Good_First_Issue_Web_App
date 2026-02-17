@@ -9,9 +9,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 /*
   2. Remove default margin
 */
@@ -87,13 +84,13 @@ body {
 
 .intro {
   min-height: 100vh;
-  background: url('../assets/stackedbgrd.png');
+  background: url("../assets/stackedbgrd.png");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  
+
   padding: 4.5rem 0;
 }
 
@@ -105,7 +102,7 @@ body {
   max-width: 1300px;
 
   text-align: center;
-  
+
   margin: 1.5rem;
 }
 
@@ -114,7 +111,7 @@ body {
 
   color: white;
   margin-bottom: 2.5rem;
-  
+
   font-weight: 400;
   max-width: 500px;
 }
@@ -123,14 +120,14 @@ body {
   margin-bottom: 1rem;
 }
 
-.github_link{
+.github_link {
   display: block;
   font-size: 1.2rem;
-  
+
   font-weight: 500;
 }
-.github_link a{
-  text-decoration:none;
+.github_link a {
+  text-decoration: none;
 }
 
 /* .left-col p {} */

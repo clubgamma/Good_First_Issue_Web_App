@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 function Card({url, title, desc}) {
   return (
-    <div className='card-bg'>
-      <div className='card'>
+    <div className='card-bg '>
+      <div className='card dark:bg-white'>
         <Link to={url} target='_blank' className='repo-title'>
           <div><GoRepo size={20} /></div>
-          <h3>{title}</h3>
+          <h3 className='dark:text-black font-extrabold'>{title}</h3>
         </Link>
-        <p>{desc}</p>
+        <p className='dark:text-black'>{desc}</p>
       </div>
     </div>
   )

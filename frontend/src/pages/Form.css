@@ -2,7 +2,7 @@
   background: #1a1f26;
   padding: 30px 20px 15px;
   width: 100%;
-  border-top: 2px solid #2d7dd2;
+  border-top: 3px solid #e63946;
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .footer-logo-icon {
-  color: #2d7dd2;
+  color: #e63946;
   font-size: 22px;
 }
 
@@ -39,18 +39,17 @@
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: #acb9c6;
+  color: #ffffff;
   font-size: 14px;
   padding: 8px 16px;
-  border: 1px solid #2d4a6e;
+  background: #e63946;
   border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 .repo-link:hover {
-  background: #2d7dd2;
+  background: #c1121f;
   color: #ffffff;
-  border-color: #2d7dd2;
 }
 
 .footer-credit {
@@ -74,7 +73,7 @@
 }
 
 .footer-bottom p {
-  color: #4a5568;
+  color: #acb9c6;
   font-size: 12px;
   margin: 0;
 }

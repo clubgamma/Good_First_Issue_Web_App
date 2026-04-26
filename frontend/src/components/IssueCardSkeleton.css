@@ -1,0 +1,73 @@
+.issue-card-skeleton {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(27, 31, 35, 0.12);
+}
+
+.repo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.repo-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #eaecef; /* Placeholder color */
+  object-fit: cover;
+}
+
+.repo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292e;
+}
+
+.repo-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #586069;
+}
+
+.issue-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.issue-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0366d6;
+}
+
+.issue-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #24292e;
+}
+
+.language-tag {
+  align-self: flex-start;
+  padding: 4px 8px;
+  border-radius: 2em;
+  font-size: 12px;
+  font-weight: 500;
+  color: #005cc5;
+  background-color: #e0f7fa;
+}

@@ -33,6 +33,9 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 5. Push to your fork and [submit a pull request](https://github.com/clubgamma/Good_First_Issue_Web_App/compare)
 6. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
+### Contributors
+- [icedmist](contributions/icedmist.md)
+
 ### Resources
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)

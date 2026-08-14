@@ -1,6 +1,6 @@
 .about-container {
   padding: 2rem 12rem;
-  background: #f3ebeb;
+  background: var(--bg-color);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,29 +8,34 @@
   align-items: center;
   gap: 2rem;
   min-height: 100vh;
+  transition: background-color 0.2s ease;
 }
-
+ 
 .about-container .About-logo {
   margin: auto;
   border-radius: 100%;
   margin-bottom: 1.5rem;
   width: 10rem;
 }
-
+ 
 .about-container h2 {
-  color: #601f2a;
+  color: var(--heading-color);
 }
-
+ 
 .about-container p {
-  color: #474747;
+  color: var(--text-color-muted);
 }
-
+ 
+.about-container a {
+  color: var(--link-color);
+}
+ 
 .about-container hr {
-  border: 10px dotted #acb9c6;
+  border: 10px dotted var(--divider-color);
   border-top: none;
   width: 10%;
 }
-
+ 
 @media only screen and (width < 768px) {
   .about-container {
     padding: 2rem 4rem;

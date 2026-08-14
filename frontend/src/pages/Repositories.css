@@ -1,16 +1,19 @@
 .repo-bg {
   min-height: 100vh;
-  background: #f3ebeb;
+  background: var(--bg-color);
   text-align: center;
   padding: 2rem 12rem;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
 }
-
+ 
 .repo-bg h2 {
   margin-bottom: 2rem;
 }
-
+ 
 @media only screen and (width < 900px) {
   .repo-bg {
     padding: 2rem 2rem;
   }
 }
+ 

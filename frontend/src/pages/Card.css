@@ -3,22 +3,25 @@
   flex-direction: column;
   margin: 10px;
 }
-
+ 
 .card-bg .card {
-  background: lightgrey;
+  background: var(--card-bg);
   padding: 15px;
-  border: 1px solid lightslategray;
+  border: 1px solid var(--card-border);
   border-radius: 12px;
+  color: var(--text-color);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
-
+ 
 .card-bg .repo-title {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  color: var(--text-color);
 }
-
+ 
 .card-bg .repo-contr {
   display: flex;
   justify-content: center;

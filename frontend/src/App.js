@@ -1,7 +1,8 @@
 import "./App.css";
 import {Hero, About, Repositories, Form, Layout} from './pages'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-
+import { ThemeProvider } from './context/ThemeContext'
+ 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -12,9 +13,13 @@ const router = createBrowserRouter(
     </Route>
   )
 )
-
+ 
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
 }
-
-export default App;
+ 
+export default App

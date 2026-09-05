@@ -39,6 +39,10 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 - [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
 - [GitHub Help](https://help.github.com)
 
+## Contributors
+
+- [Pranya15](contributions/Pranya15.md)
+
 ## Want to Contribute to more awesome Hacktoberfest repository?
 
 **Hacktoberfest repository :** 
